@@ -1,23 +1,33 @@
 ﻿using EasyTaskTracker.Model;
+using TrackerTask = EasyTaskTracker.Model.TrackerTask;
 
 public class TaskRepository : ITaskRepository
 {
     private readonly string PATH;
-    private TaskContext _context; 
+    private TaskContext _context;
 
     public TaskRepository(TaskContext context)
     {
         _context = context;
     }
-     
+
+    public void AddTask(EasyTaskTracker.Model.TrackerTask task)
+    {
+        _context.Tasks.Add(task);
+        _context.SaveChanges();
+    }
+
+    public List<TrackerTask> GetAllTasks()
+    {
+        return _context.Tasks.ToList();
+    }
+
     public void AddRole(Role role)
-    { 
+    {
 
     }
 
-    public void AddTask(ITask task)
-    { 
-    }
+  
 
     public void AddUser(User user)
     {
@@ -25,21 +35,21 @@ public class TaskRepository : ITaskRepository
     }
 
     public void AssignRole(User user, Role role)
-    { 
-        throw new NotImplementedException();
-    }
-
-    public void AssignTask(ITask task, User user)
     {
         throw new NotImplementedException();
     }
 
-    public void ChangeTaskStage(ITask task, IStage stage)
+    public void AssignTask(TrackerTask task, User user)
     {
         throw new NotImplementedException();
     }
 
-    public void ChangeTaskStatus(ITask task, bool status)
+    public void ChangeTaskStage(TrackerTask task, StageEnum stage)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void ChangeTaskStatus(TrackerTask task, bool status)
     {
         throw new NotImplementedException();
     }
@@ -49,7 +59,7 @@ public class TaskRepository : ITaskRepository
         throw new NotImplementedException();
     }
 
-    public void RemoveTask(ITask task)
+    public void RemoveTask(TrackerTask task)
     {
         throw new NotImplementedException();
     }
@@ -64,7 +74,7 @@ public class TaskRepository : ITaskRepository
         throw new NotImplementedException();
     }
 
-    public void UpdateTask(ITask task)
+    public void UpdateTask(TrackerTask task)
     {
         throw new NotImplementedException();
     }
@@ -72,5 +82,10 @@ public class TaskRepository : ITaskRepository
     public void UpdateUser(User user)
     {
         throw new NotImplementedException();
+    }
+
+    public List<TrackerTask> GetTasks()
+    { 
+        return _context.Tasks.ToList();
     }
 }

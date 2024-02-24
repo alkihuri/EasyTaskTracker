@@ -2,17 +2,17 @@
 
 namespace EasyTaskTracker.Model
 {
-    public class Task : ITask
+    public class TrackerTask
     {
         private List<User> _asssignies;
 
 
-        public Task()
+        public TrackerTask()
         {
             _asssignies = new List<User>();
         }
 
-        public Task(int id, string name, bool isComplete, string description, IStage stage, List<User> asssignies)
+        public TrackerTask(int id, string name, bool isComplete, string description, StageEnum stage, List<User> asssignies)
         {
             Id = id;
             Name = name;
@@ -27,7 +27,7 @@ namespace EasyTaskTracker.Model
         public bool IsComplete { get; set; }
 
         public string Description { get; set; }
-        public IStage Stage { get; set; }
+        public StageEnum Stage { get; set; }
         public List<User> Asssignies { get => _asssignies; set => _asssignies = value; }
     }
 }

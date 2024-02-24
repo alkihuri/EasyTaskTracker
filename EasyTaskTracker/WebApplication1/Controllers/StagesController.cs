@@ -15,7 +15,7 @@ namespace EasyTaskTracker.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<IStage> GetStages()
+        public IEnumerable<StageEnum> GetStages()
         {
             return _taskManager.GetStages();
         }

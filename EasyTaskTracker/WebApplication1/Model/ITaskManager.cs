@@ -2,16 +2,16 @@
 
 public interface ITaskManager
 {
-    ITask CreateTask(string name, string description, IStage stage);
-    ITask GetTask(int id);
-    void AddTask(ITask task);
-    IEnumerable<ITask> GetTasks();
-    void UpdateTask(ITask task);
+    TrackerTask CreateTask(string name, string description, StageEnum stage);
+    TrackerTask GetTask(int id);
+    void AddTask(TrackerTask task);
+    IEnumerable<TrackerTask> GetTasks();
+    void UpdateTask(TrackerTask task);
     void DeleteTask(int id);
-    IStage CreateStage(StageEnum name);
-    IStage GetStage(int id);
-    IEnumerable<IStage> GetStages();
-    void UpdateStage(IStage stage);
+    StageEnum CreateStage(StageEnum name);
+    StageEnum GetStage(int id);
+    IEnumerable<StageEnum> GetStages();
+    void UpdateStage(StageEnum stage);
     void DeleteStage(int id);
 
     User CreateUser(string name);

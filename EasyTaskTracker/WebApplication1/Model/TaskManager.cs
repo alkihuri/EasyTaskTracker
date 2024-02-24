@@ -10,27 +10,27 @@ public class TaskManager : ITaskManager
         _taskRepository = taskRepository;
     }
 
-    public void AddTask(ITask task)
+    public void AddTask(TrackerTask task)
     {
-        // Add task to database
+        _taskRepository.AddTask(task);
     }
-    public void RemoveTask(ITask task)
+    public void RemoveTask(TrackerTask task)
     {
         // Remove task from database
     }
-    public void UpdateTask(ITask task)
+    public void UpdateTask(TrackerTask task)
     {
         // Update task in database
     }
-    public void AssignTask(ITask task, User user)
+    public void AssignTask(TrackerTask task, User user)
     {
         // Assign task to user
     }
-    public void ChangeTaskStage(ITask task, IStage stage)
+    public void ChangeTaskStage(TrackerTask task, StageEnum stage)
     {
         // Change task stage
     }
-    public void ChangeTaskStatus(ITask task, bool status)
+    public void ChangeTaskStatus(TrackerTask task, bool status)
     {
         // Change task status
     }
@@ -66,19 +66,19 @@ public class TaskManager : ITaskManager
     {
         // Remove role from user
     }
-    public void AddTaskToRole(Role role, ITask task)
+    public void AddTaskToRole(Role role, TrackerTask task)
     {
         // Add task to role
     }
-    public void RemoveTaskFromRole(Role role, ITask task)
+    public void RemoveTaskFromRole(Role role, TrackerTask task)
     {
         // Remove task from role
     }
-    public void AddUserToTask(ITask task, User user)
+    public void AddUserToTask(TrackerTask task, User user)
     {
         // Add user to task
     }
-    public void RemoveUserFromTask(ITask task, User user)
+    public void RemoveUserFromTask(TrackerTask task, User user)
     {
         // Remove user from task
     }
@@ -90,36 +90,36 @@ public class TaskManager : ITaskManager
     {
         // Remove user from role
     }
-    public void AddTaskToUser(User user, ITask task)
+    public void AddTaskToUser(User user, TrackerTask task)
     {
         // Add task to user
     }
-    public void RemoveTaskFromUser(User user, ITask task)
+    public void RemoveTaskFromUser(User user, TrackerTask task)
     {
         // Remove task from user
     }
-    public void AddRoleToTask(ITask task, Role role)
+    public void AddRoleToTask(TrackerTask task, Role role)
     {
         // Add role to task
     }
-    public void RemoveRoleFromTask(ITask task, Role role)
+    public void RemoveRoleFromTask(TrackerTask task, Role role)
     {
         // Remove role from task
     }
 
-    public ITask CreateTask(string name, string description, IStage stage)
+    public TrackerTask CreateTask(string name, string description, StageEnum stage)
     {
         throw new NotImplementedException();
     }
 
-    public ITask GetTask(int id)
+    public TrackerTask GetTask(int id)
     {
         throw new NotImplementedException();
     }
 
-    public IEnumerable<ITask> GetTasks()
+    public IEnumerable<TrackerTask> GetTasks()
     {
-        throw new NotImplementedException();
+        return _taskRepository.GetTasks();
     }
 
     public void DeleteTask(int id)
@@ -127,22 +127,22 @@ public class TaskManager : ITaskManager
         throw new NotImplementedException();
     }
 
-    public IStage CreateStage(StageEnum name)
+    public StageEnum CreateStage(StageEnum name)
     {
         throw new NotImplementedException();
     }
 
-    public IStage GetStage(int id)
+    public StageEnum GetStage(int id)
     {
         throw new NotImplementedException();
     }
 
-    public IEnumerable<IStage> GetStages()
+    public IEnumerable<StageEnum> GetStages()
     {
         throw new NotImplementedException();
     }
 
-    public void UpdateStage(IStage stage)
+    public void UpdateStage(StageEnum stage)
     {
         throw new NotImplementedException();
     }
@@ -168,6 +168,11 @@ public class TaskManager : ITaskManager
     }
 
     public void DeleteUser(int id)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void AddTask(Task task)
     {
         throw new NotImplementedException();
     }

@@ -17,9 +17,9 @@ namespace EasyTaskTracker.Controllers
 
         [HttpGet]
         [Route("tasks/getall")]
-        public IEnumerable<ITask> GetTasks()
+        public IActionResult GetTasks()
         {
-            return _taskManager.GetTasks();
+            return Ok(_taskManager.GetTasks());
         }
 
         [HttpGet] 
@@ -33,13 +33,30 @@ namespace EasyTaskTracker.Controllers
 
         [HttpPost] 
         [Route("tasks/createtask")]
-        public void CreateTask([FromBody] ITask task)
+        public IActionResult CreateTask([FromBody] TrackerTask task)
         {
             _taskManager.AddTask(task);
+            return Ok();    
+        }
+
+        [HttpGet]
+        [Route("tasks/createtaskrandom")]
+        public IActionResult CreateTask(int id)
+        {
+            var task = new TrackerTask()
+            {
+                Id = id,
+                Name = "Task" + id,
+                IsComplete = false,
+                Description = "Description" + id,
+                Stage = StageEnum.ToDo
+            };
+            _taskManager.AddTask(task);
+             return Ok();
         }
 
         [HttpPut("{id}")]
-        public void UpdateTask(int id, [FromBody] ITask task)
+        public void UpdateTask(int id, [FromBody] TrackerTask task)
         {
             task.Id = id; // Установка ID из URL
             _taskManager.UpdateTask(task);

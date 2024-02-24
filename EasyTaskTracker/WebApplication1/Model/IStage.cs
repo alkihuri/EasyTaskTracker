@@ -6,12 +6,5 @@
         ToDo,
         InProgress,
         Done
-    }
-
-    public interface IStage
-    {  
-        StageEnum Name { get; set; }
-
-
-    }
+    } 
 }

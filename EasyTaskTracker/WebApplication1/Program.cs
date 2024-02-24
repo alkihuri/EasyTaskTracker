@@ -17,7 +17,7 @@ builder.Services.AddScoped<ITaskManager>(provider =>
     optionsBuilder.UseSqlite("Data Source=TaskDataBase.db");
 
     var taskContext = new TaskContext(optionsBuilder.Options);
-
+    taskContext.Database.EnsureCreated();
     // Assuming TaskRepository and TaskManager require a TaskContext in their constructors
     ITaskRepository taskRepository = new TaskRepository(taskContext);
     ITaskManager taskManager = new TaskManager(taskRepository);

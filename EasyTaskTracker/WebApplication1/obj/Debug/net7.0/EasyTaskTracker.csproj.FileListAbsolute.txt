@@ -130,3 +130,7 @@ C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\WebApplication1\
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\WebApplication1\obj\Debug\net7.0\EasyTaskTracker.pdb
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\WebApplication1\obj\Debug\net7.0\EasyTaskTracker.genruntimeconfig.cache
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\WebApplication1\obj\Debug\net7.0\ref\EasyTaskTracker.dll
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\WebApplication1\bin\Debug\net7.0\Humanizer.dll
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\WebApplication1\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\WebApplication1\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\WebApplication1\bin\Debug\net7.0\System.CodeDom.dll
