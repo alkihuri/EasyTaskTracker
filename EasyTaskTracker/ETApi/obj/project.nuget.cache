@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5ekMZIxXHVYmdnxMWqMa6MidGNjkij7C1ZMj/7PL9Df6QEweVsw6M+nk3E2g3UgCDiJQ/j8Nb5msUEq8Cgq1rQ==",
+  "dgSpecHash": "myABxV3pRUKL5dt3rQzxlUR/tMSk9XOEg3zzQuaX7or6f5FBTa+LeOGyj2/dT/zAoEOvK7rRoTji/0tAMYmivw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\WebApplication1\\EasyTaskTracker.csproj",
+  "projectFilePath": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\ETApi\\EasyTaskTracker.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alkih\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\alkih\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

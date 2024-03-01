@@ -23,8 +23,9 @@ public class TaskRepository : ITaskRepository
     }
 
     public void AddRole(Role role)
-    {
-
+    { 
+        //_context.Roles.Add(role);
+        //_context.SaveChanges();
     }
 
   

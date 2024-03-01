@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+</head>
+<body>
+    <h1>Task Tracker</h1>
+
+    <div id="taskList">
+        <!-- Здесь будут отображаться задачи -->
+    </div>
+
+    <h2>Create Task</h2>
+    <form id="createTaskForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <button type="submit">Create Task</button>
+    </form>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const taskList = document.getElementById('taskList');
+            const createTaskForm = document.getElementById('createTaskForm');
+
+            // Функция для обновления списка задач
+            const refreshTasks = () => {
+                fetch('/api/Tasks/tasks/getall')
+                    .then(response => response.json())
+                    .then(tasks => {
+                        taskList.innerHTML = '';
+                        tasks.forEach(task => {
+                            const taskItem = document.createElement('div');
+                            taskItem.innerHTML = `
+                                <p>ID: ${task.id}</p>
+                                <p>Name: ${task.name}</p>
+                                <p>Description: ${task.description}</p>
+                                <p>Is Complete: ${task.isComplete ? 'Yes' : 'No'}</p>
+                                <hr>
+                            `;
+                            taskList.appendChild(taskItem);
+                        });
+                    })
+                    .catch(error => console.error('Error fetching tasks:', error));
+            };
+
+            // Обработчик отправки формы создания задачи
+            createTaskForm.addEventListener('submit', event => {
+                event.preventDefault();
+                const formData = new FormData(createTaskForm);
+                const taskData = {
+                    name: formData.get('name'),
+                    description: formData.get('description'),
+                    isComplete: false // Новая задача всегда не завершена
+                };
+
+                fetch('/api/Tasks/tasks/createtask', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(taskData)
+                })
+                .then(() => {
+                    // Очистка формы и обновление списка задач после успешного создания
+                    createTaskForm.reset();
+                    refreshTasks();
+                })
+                .catch(error => console.error('Error creating task:', error));
+            });
+
+            // Инициализация: загрузка списка задач
+            refreshTasks();
+        });
+    </script>
+</body>
+</html>
