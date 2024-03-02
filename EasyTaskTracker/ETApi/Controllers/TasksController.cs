@@ -1,5 +1,6 @@
 ﻿using EasyTaskTracker.Model;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 
 namespace EasyTaskTracker.Controllers
@@ -62,10 +63,16 @@ namespace EasyTaskTracker.Controllers
             _taskManager.UpdateTask(task);
         }
 
-        [HttpDelete("{id}")]
+        [HttpGet]
+        [Route("tasks/deletetask")]
         public void DeleteTask(int id)
         {
-            _taskManager.DeleteTask(id);
+            var task = _taskManager.GetTasks().ToList().Find(x => x.Id == id); 
+            Console.WriteLine("DeleteTask");  
+            if(task != null)
+                _taskManager.DeleteTask(task);   
+            else
+                Console.WriteLine("Task not found");
         }
     }
 }

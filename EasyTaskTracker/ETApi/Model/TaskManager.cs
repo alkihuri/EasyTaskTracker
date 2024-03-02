@@ -14,9 +14,9 @@ public class TaskManager : ITaskManager
     {
         _taskRepository.AddTask(task);
     }
-    public void RemoveTask(TrackerTask task)
-    {
-        // Remove task from database
+    public void DeleteTask(TrackerTask task)
+    { 
+        _taskRepository.DeleteTask(task);    
     }
     public void UpdateTask(TrackerTask task)
     {
@@ -122,10 +122,7 @@ public class TaskManager : ITaskManager
         return _taskRepository.GetTasks();
     }
 
-    public void DeleteTask(int id)
-    {
-        throw new NotImplementedException();
-    }
+     
 
     public StageEnum CreateStage(StageEnum name)
     {
@@ -165,15 +162,15 @@ public class TaskManager : ITaskManager
     public IEnumerable<User> GetUsers()
     {
         throw new NotImplementedException();
-    }
-
-    public void DeleteUser(int id)
-    {
-        throw new NotImplementedException();
-    }
+    } 
 
     public void AddTask(Task task)
     {
         throw new NotImplementedException();
+    }
+
+    public void DeleteUser(int id)
+    {
+        // Delete user from database     
     }
 }

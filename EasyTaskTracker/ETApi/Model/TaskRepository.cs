@@ -89,4 +89,10 @@ public class TaskRepository : ITaskRepository
     { 
         return _context.Tasks.ToList();
     }
+
+    public void DeleteTask(TrackerTask task)
+    {
+        _context.Tasks.Remove(task);
+        _context.SaveChanges();
+    }
 }

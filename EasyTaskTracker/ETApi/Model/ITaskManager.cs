@@ -7,7 +7,7 @@ public interface ITaskManager
     void AddTask(TrackerTask task);
     IEnumerable<TrackerTask> GetTasks();
     void UpdateTask(TrackerTask task);
-    void DeleteTask(int id);
+    void DeleteTask(TrackerTask task);
     StageEnum CreateStage(StageEnum name);
     StageEnum GetStage(int id);
     IEnumerable<StageEnum> GetStages();

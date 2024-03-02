@@ -3,7 +3,7 @@
 public interface ITaskRepository
 {
     void AddTask(TrackerTask task);
-    void RemoveTask(TrackerTask task);
+    void DeleteTask(TrackerTask task);
     void UpdateTask(TrackerTask task);
     void AssignTask(TrackerTask task, User user);
     void ChangeTaskStage(TrackerTask task, StageEnum stage);
