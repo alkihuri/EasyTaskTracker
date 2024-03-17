@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "tQMxBj6TbW0koOMIPqOCQ9c7TEVHHDqfo6YKRXL4nHs=",
+  "Source": "EasyTrackerAPI",
+  "BasePath": "_content/EasyTrackerAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EasyTrackerAPI\\wwwroot",
+      "Source": "EasyTrackerAPI",
+      "ContentRoot": "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\wwwroot\\",
+      "BasePath": "_content/EasyTrackerAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\wwwroot\\index.html",
+      "SourceId": "EasyTrackerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\wwwroot\\",
+      "BasePath": "_content/EasyTrackerAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

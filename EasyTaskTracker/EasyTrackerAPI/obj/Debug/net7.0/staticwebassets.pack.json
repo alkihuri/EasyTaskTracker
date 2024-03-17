@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.EasyTrackerAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.EasyTrackerAPI.props",
+      "PackagePath": "build\\EasyTrackerAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.EasyTrackerAPI.props",
+      "PackagePath": "buildMultiTargeting\\EasyTrackerAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.EasyTrackerAPI.props",
+      "PackagePath": "buildTransitive\\EasyTrackerAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

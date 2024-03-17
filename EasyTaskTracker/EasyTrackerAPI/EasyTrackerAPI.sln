@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyTrackerAPI", "EasyTrackerAPI.csproj", "{D6498420-EC49-43A9-ACD9-F2E9BE63DCEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6498420-EC49-43A9-ACD9-F2E9BE63DCEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6498420-EC49-43A9-ACD9-F2E9BE63DCEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6498420-EC49-43A9-ACD9-F2E9BE63DCEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6498420-EC49-43A9-ACD9-F2E9BE63DCEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91BB9BA6-99F3-4D4C-8580-AD541376E2A9}
+	EndGlobalSection
+EndGlobal
