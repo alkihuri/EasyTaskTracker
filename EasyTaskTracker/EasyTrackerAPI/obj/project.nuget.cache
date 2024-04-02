@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V004VrX4mbuozCxdULu2HFv1mIMu8D3U7390DiUaqlCAZVTw2eIY5bj/k+U9/kxsiSYl0kzb5WQN6Pfegl46bA==",
+  "dgSpecHash": "8kpa+3WF/j1bf8NKTh8XzdcoykUvWgKiZwlfrZ5efsyRpP868WLEZbke/HBwaaHpw4l46q3pKjfo3cfjYpnXuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\EasyTrackerAPI.csproj",
+  "projectFilePath": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\EasyTrackerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alkih\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
     "C:\\Users\\alkih\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.0\\microsoft.data.sqlite.core.7.0.0.nupkg.sha512",

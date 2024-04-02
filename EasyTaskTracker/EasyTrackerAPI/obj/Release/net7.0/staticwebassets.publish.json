@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "g6jgL0Ik8unP8rNmzGOjn2ttik3gtbZY/K7laSoaEUg=",
+  "Source": "EasyTrackerAPI",
+  "BasePath": "_content/EasyTrackerAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EasyTrackerAPI\\wwwroot",
+      "Source": "EasyTrackerAPI",
+      "ContentRoot": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\wwwroot\\",
+      "BasePath": "_content/EasyTrackerAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\wwwroot\\index.html",
+      "SourceId": "EasyTrackerAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\wwwroot\\",
+      "BasePath": "_content/EasyTrackerAPI",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

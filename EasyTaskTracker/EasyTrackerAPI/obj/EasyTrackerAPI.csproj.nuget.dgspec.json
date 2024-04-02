@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\EasyTrackerAPI.csproj": {}
+    "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\EasyTrackerAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\EasyTrackerAPI.csproj": {
+    "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\EasyTrackerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\EasyTrackerAPI.csproj",
+        "projectUniqueName": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\EasyTrackerAPI.csproj",
         "projectName": "EasyTrackerAPI",
-        "projectPath": "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\EasyTrackerAPI.csproj",
+        "projectPath": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\EasyTrackerAPI.csproj",
         "packagesPath": "C:\\Users\\alkih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alkih\\Documents\\GitHub\\Puzzle.Backend\\Course\\Lesson32\\PracticeABC\\EasyTrackerAPI\\obj\\",
+        "outputPath": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alkih\\AppData\\Roaming\\NuGet\\NuGet.Config",

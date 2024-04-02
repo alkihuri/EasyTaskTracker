@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\alkih\\Documents\\GitHub\\EasyTaskTracker\\EasyTaskTracker\\EasyTrackerAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.EasyTrackerAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.EasyTrackerAPI.props",
+      "PackagePath": "build\\EasyTrackerAPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.EasyTrackerAPI.props",
+      "PackagePath": "buildMultiTargeting\\EasyTrackerAPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.EasyTrackerAPI.props",
+      "PackagePath": "buildTransitive\\EasyTrackerAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -102,9 +102,18 @@
     <div id="taskList">
         <!-- Task items will be displayed here -->
     </div>
+    <form id="registrationForm">
+        <h2>Регистрация</h2>
+        <label for="regUsername">Логин:</label>
+        <input type="text" id="regUsername" name="regUsername" required>
+        <label for="regPassword">Пароль:</label>
+        <input type="password" id="regPassword" name="regPassword" required>
+        <button type="submit">Зарегистрироваться</button>
+    </form>
 
-    <h2>Создание задачи</h2>
+    <div id="registrationMessage"></div>
     <form id="createTaskForm">
+        <h2>Создание задачи</h2>
         <label for="name">Название:</label>
         <input type="text" id="name" name="name" required>
         <label for="description">Описание:</label>
@@ -116,8 +125,59 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+
+            const registrationForm = document.getElementById('registrationForm');
+            const registrationMessage = document.getElementById('registrationMessage');
+
+            
+
             const taskList = document.getElementById('taskList');
             const createTaskForm = document.getElementById('createTaskForm');
+
+            createTaskForm.style.display = 'none';
+            taskList.style.display = 'none';
+            registrationMessage.style.display = 'none'; 
+
+            // Обработчик события для отправки данных формы регистрации
+            registrationForm.addEventListener('submit', event => {
+                event.preventDefault();
+                const formData = new FormData(registrationForm);
+                const userData = {
+                    name: formData.get('regUsername'), // Имя пользователя используется в качестве логина
+                    password: formData.get('regPassword')
+                };
+
+                fetch('/api/account/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(userData)
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data) {
+                        // Регистрация выполнена успешно, выводим сообщение об успехе
+                        registrationMessage.innerText = "Регистрация успешно завершена.";
+                        // Скрываем форму создания задачи
+                        registrationForm.style.display = 'none';
+                        // скрываем через 2 секунды сообщение об успешной регистрации
+                        setTimeout(() => {
+                            registrationMessage.style.display = 'none';
+                        }, 2000); 
+                        createTaskForm.style.display = 'block';
+                        taskList.style.display = 'block';   
+                    } else {
+                        // Регистрация не удалась, выводим сообщение об ошибке
+                        registrationMessage.innerText = "Ошибка регистрации: " + data.message;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+            });
+
+
 
             // Function to refresh the task list
             // Function to refresh the task list

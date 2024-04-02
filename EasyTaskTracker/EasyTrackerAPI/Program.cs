@@ -23,15 +23,28 @@ builder.Services.AddSingleton<ITaskManager>(provider =>
     return taskManager;
 });
 
+builder.Services.AddSingleton<IAccountManager>(provider =>
+{
+    var optionsBuilder = new DbContextOptionsBuilder<AccountContext>();
+    optionsBuilder.UseSqlite("Data Source=AccountDataBase.db"); 
+    var accountContext = new AccountContext(optionsBuilder.Options);
+    accountContext.Database.EnsureCreated();  
+    IAccountManager accountManager = new AccountManager(accountContext);
 
+    return accountManager;
+});
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new() { Title = "EasyTaskTracker API", Version = "v1" });
+}); 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+ 
+app.UseSwagger();
+app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "EasyTaskTracker API v1"));
+ 
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

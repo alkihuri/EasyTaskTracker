@@ -10,6 +10,11 @@ public class User
         Name = name; 
     }
 
+    public User()
+    {
+        
+    }
+
     public long ID { get; set; }
     public string? Name { get; set; }
     public string? Email { get; set; }
