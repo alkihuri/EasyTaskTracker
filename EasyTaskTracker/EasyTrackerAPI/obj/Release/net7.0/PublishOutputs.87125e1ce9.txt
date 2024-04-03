@@ -1,6 +1,11 @@
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\EasyTrackerAPI.exe
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\publish\web.config
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\appsettings.Development.json
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\appsettings.json
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\publish\appsettings.Development.json
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\publish\appsettings.json
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\publish\EasyTrackerAPI.deps.json
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\publish\EasyTrackerAPI.runtimeconfig.json
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\EasyTrackerAPI.dll
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\EasyTrackerAPI.deps.json
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\publish\EasyTrackerAPI.runtimeconfig.json
