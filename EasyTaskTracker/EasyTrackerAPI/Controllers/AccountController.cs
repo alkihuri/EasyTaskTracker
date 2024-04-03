@@ -26,10 +26,18 @@ public class AccountController : ControllerBase
     [HttpPost("/api/account/register")]
     public IActionResult Create([FromBody] User account)
     {
-        Console.WriteLine("Registring account: " + account.Name); 
+         Console.WriteLine("Registering account: " + account.Name); 
         _accountManager.RegisterAccount(account);
 
-        return _accountManager.VerifyAccount(account) ? Ok(account) : BadRequest();
+        bool isVerified = _accountManager.VerifyAccount(account);
+        
+        // Создаем объект для ответа, который содержит информацию о пользователе и его статусе верификации
+        var response = new {
+            User = account,
+            IsVerified = isVerified
+        };
+
+        return Ok(response);
     }   
 
     [HttpPost("api/account/verify")]    
