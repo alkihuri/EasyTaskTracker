@@ -321,3 +321,9 @@ C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\o
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\obj\Debug\net7.0\EasyTrackerAPI.pdb
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\obj\Debug\net7.0\EasyTrackerAPI.genruntimeconfig.cache
 C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\obj\Debug\net7.0\ref\EasyTrackerAPI.dll
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\bin\Debug\net7.0\publish\web.config
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\bin\Debug\net7.0\publish\appsettings.Development.json
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\bin\Debug\net7.0\publish\EasyTrackerAPI.deps.json
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\bin\Debug\net7.0\publish\EasyTrackerAPI.runtimeconfig.json
+C:\Users\alkih\Documents\GitHub\EasyTaskTracker\EasyTaskTracker\EasyTrackerAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll

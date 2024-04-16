@@ -1,6 +1,10 @@
 
 using System.Text.Json.Serialization;
-using Microsoft.EntityFrameworkCore; 
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;  
+using Microsoft.AspNetCore; 
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,22 +26,35 @@ builder.Services.AddSingleton<ITaskManager>(provider =>
 
     return taskManager;
 });
-
-builder.Services.AddSingleton<IAccountManager>(provider =>
-{
-    var optionsBuilder = new DbContextOptionsBuilder<AccountContext>();
-    optionsBuilder.UseSqlite("Data Source=AccountDataBase.db"); 
-    var accountContext = new AccountContext(optionsBuilder.Options);
-    accountContext.Database.EnsureCreated();  
-    IAccountManager accountManager = new AccountManager(accountContext);
-
-    return accountManager;
-});
-
+ 
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new() { Title = "EasyTaskTracker API", Version = "v1" });
 }); 
+
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(
+        builder =>
+        {
+             builder.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+        });
+});
+ 
+builder.Services.AddDbContext<AccountContext>(options =>
+{
+    options.UseSqlite("Data Source=Accounts.db"); 
+});  
+
+builder.Services.AddIdentity<User, IdentityRole>(options =>
+{
+    
+}) 
+.AddEntityFrameworkStores<AccountContext>() ;
+ 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -46,6 +63,9 @@ app.UseSwagger();
 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "EasyTaskTracker API v1"));
  
 
+app.UseAuthorization();
+app.UseAuthentication();
+app.UseCors();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAuthorization();
